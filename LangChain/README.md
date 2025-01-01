@@ -2,11 +2,9 @@
 
 LangChain is a framework for developing applications powered by language models.
 
-It provides a standard interface for accessing language models, along with a collection of chains for common language applications.
+LangChain is a framework designed to assist in building applications that leverage Large Language Models (LLMs).
 
-Developers can use LangChain to build applications that use language models to interact with data, solve problems, or generate text.
-
-It supports Productionization where we will be using LangSmith to deploy the applications.
+It provides abstractions and tools to make it easier to work with LLMs, particularly for complex workflows and tasks that require chaining multiple steps or integrating multiple data sources. LangChain helps in creating sophisticated applications such as chatbots, question answering systems, summarization tools, or data pipelines, using LLMs like OpenAI's GPT, LLaMA, and other transformer-based models.
 
 ![LangChain](https://python.langchain.com/svg/langchain_stack_112024_dark.svg)
 
@@ -16,6 +14,6 @@ A chat model is a language model that is trained to generate responses that are 
 
 The model is trained on a large corpus of text data, which includes a wide range of conversations and topics. The model learns to generate responses that are coherent and relevant to the conversation, and that can be used to answer questions or provide information.
 
-The model is trained using a technique called unsupervised learning, which means that it learns from the data without being explicitly told which responses are correct or incorrect. This allows the model to generate responses that are not only coherent and relevant, but also diverse and creative.
+Chains: A chain is a sequence of actions, where each action (or step) is typically a call to an LLM, an API, or some other process. Chains allow you to compose multiple tasks together to build more complex behaviors.
 
-LangSmith is a cloud-based platform that allows developers to easily deploy and manage their LangChain applications. It provides a simple and intuitive interface for building and deploying LangChain applications, and supports a wide range of language models and other tools.
+Agents: These are components that can dynamically decide what action to take based on the input. Agents are used for tasks like reasoning, answering questions, or executing tasks that require context-specific decisions, such as calling external APIs or databases.
